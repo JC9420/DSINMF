@@ -1,6 +1,6 @@
-# DSINMF
-Detecting cell type from single cell RNA sequencing based on deep bi-stoachstic graph regularized matrix factorization
 
+Detecting cell type from single cell RNA sequencing based on deep bi-stoachstic graph regularized matrix factorization
+===========================================================================================================================
 Overview:
 This is code to do Detecting cell type from single cell RNA sequencing based on deep bi-stoachstic graph regularized matrix factorization given in the "experiment" section of the paper: 
 The coding here is a generalization of the algorithm given in the paper. DSINMF is written in the MATLAB programming language. To use, please download the DSINMF folder and follow the instructions provided in the README.doc.
