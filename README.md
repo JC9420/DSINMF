@@ -3,8 +3,8 @@ Detecting cell type from single cell RNA sequencing based on deep bi-stoachstic 
 ===========================================================================================================================
 Overview:
 ----------------------------------------------------------------------------------------------------------------------------
-## This is code to do Detecting cell type from single cell RNA sequencing based on deep bi-stoachstic graph regularized matrix factorization given in the "experiment" section ## of the paper: 
-## The coding here is a generalization of the algorithm given in the paper. DSINMF is written in the MATLAB programming language. To use, please download the DSINMF folder and ## follow the instructions provided in the README.doc.
+## This is code to do Detecting cell type from single cell RNA sequencing based on deep bi-stoachstic graph regularized matrix factorization given in the "experiment" section of the paper: 
+## The coding here is a generalization of the algorithm given in the paper. DSINMF is written in the MATLAB programming language. To use, please download the DSINMF folder and follow the instructions provided in the README.doc.
 ## Files:
 ### run_DSINMF.m - The main function.
 ### factorization_AB.m - dimension reduction
@@ -17,8 +17,8 @@ Overview:
 ### ARI.m - Program for calculating the Adjusted Rand Index ( Hubert & Arabie) between two clusterings.
 ### hungarian.m - Solve the Assignment problem using the Hungarian method.
 ## Example:
-## Follow the steps below to run DSINMF（also contained in the " excute_run_DSINMF.m" file）. Here use a real scRNA-seq data (Patel and Chu) set as an example.
-## Follow the steps below to run DSINMF（also contained in the " excute_run_DSINMF.m" file）. Here use a real scRNA-seq data (Patel and Chu) set as an example.
+### Follow the steps below to run DSINMF（also contained in the " excute_run_DSINMF.m" file）. Here use a real scRNA-seq data (Patel and Chu) set as an example.
+### Follow the steps below to run DSINMF（also contained in the " excute_run_DSINMF.m" file）. Here use a real scRNA-seq data (Patel and Chu) set as an example.
 ...
         clc;
         % dataSet={'Chu_ready','Patel_ready'};
