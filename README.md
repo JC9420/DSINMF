@@ -3,19 +3,19 @@ Detecting cell type from single cell RNA sequencing based on deep bi-stoachstic 
 ===========================================================================================================================
 Overview:
 ----------------------------------------------------------------------------------------------------------------------------
-## This is code to do Detecting cell type from single cell RNA sequencing based on deep bi-stoachstic graph regularized matrix factorization given in the "experiment" section of the paper: 
-## The coding here is a generalization of the algorithm given in the paper. DSINMF is written in the MATLAB programming language. To use, please download the DSINMF folder and follow the instructions provided in the README.doc.
-## Files:
-### run_DSINMF.m - The main function.
-### factorization_AB.m - dimension reduction
-### factorization_BF.m - deep matrix factorization
-### constructW.m - Compute adjacent matrix W.
-### NormalizeUV.m - Normalize data.
-### bestMap.m - permute labels of L2 to match L1 as good as possible.
-### compute_NMI.m - Program for calculating the Normalized Mutual Information (NMI) between two clusterings.
-### AMI.m - Program for calculating the Adjusted Mutual Information (AMI) between two clusterings.
-### ARI.m - Program for calculating the Adjusted Rand Index ( Hubert & Arabie) between two clusterings.
-### hungarian.m - Solve the Assignment problem using the Hungarian method.
+### This is code to do Detecting cell type from single cell RNA sequencing based on deep bi-stoachstic graph regularized matrix factorization given in the "experiment" section of the paper: 
+### The coding here is a generalization of the algorithm given in the paper. DSINMF is written in the MATLAB programming language. To use, please download the DSINMF folder and follow the instructions provided in the README.doc.
+#### Files:
+##### run_DSINMF.m - The main function.
+##### factorization_AB.m - dimension reduction
+##### factorization_BF.m - deep matrix factorization
+##### constructW.m - Compute adjacent matrix W.
+##### NormalizeUV.m - Normalize data.
+##### bestMap.m - permute labels of L2 to match L1 as good as possible.
+##### compute_NMI.m - Program for calculating the Normalized Mutual Information (NMI) between two clusterings.
+##### AMI.m - Program for calculating the Adjusted Mutual Information (AMI) between two clusterings.
+##### ARI.m - Program for calculating the Adjusted Rand Index ( Hubert & Arabie) between two clusterings.
+##### hungarian.m - Solve the Assignment problem using the Hungarian method.
 ## Example:
 ### Follow the steps below to run DSINMF（also contained in the " excute_run_DSINMF.m" file）. Here use a real scRNA-seq data (Patel and Chu) set as an example.
 ### Follow the steps below to run DSINMF（also contained in the " excute_run_DSINMF.m" file）. Here use a real scRNA-seq data (Patel and Chu) set as an example.
