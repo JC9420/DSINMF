@@ -17,7 +17,8 @@ Overview:
 ##### hungarian.m - Solve the Assignment problem using the Hungarian method.
 ## Example:
 ### Follow the steps below to run DSINMF（also contained in the " excute_run_DSINMF.m" file）. Here use a real scRNA-seq data (Patel and Chu) set as an example.
-~
+
+```  
 clc;
 % dataSet={'Chu_ready','Patel_ready'};
 dataSet={'Patel_ready'};  
@@ -41,7 +42,8 @@ for j = 1:c
  end 
 t2=clock;
 a=etime(t2,t1);
-fprintf('%f\n',a);
-~
+fprintf('%f\n',a); 
+```
+
 ## Contact 
 ### Please send any questions or found bugs to lanwei@gxu.edu.cn 
