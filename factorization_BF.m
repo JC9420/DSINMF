@@ -1,5 +1,11 @@
 function [B_final, F_final] = factorization_BF(X,A,k,W,options)
-
+% X:the input data matrix
+% A:the matrix ,which would be factoried
+% k:the dimension
+% W:the affinity matrix of raw data
+% options:
+% written by JianWei Chen , January/2021
+% 
 maxIter = 200;
 if isfield(options, 'maxIter')
     maxIter = options.maxIter;
@@ -107,7 +113,7 @@ F_final = Fkl; %%% F_final  is finally F
 
 [B_final,F_final] = NormalizeUV(B_final, F_final', NormV, Norm);F_final=F_final';
 t=1:iter;
-figure
+figure;
 plot(t,er,'r-'),xlabel('Iteration times');ylabel('Error');
 end
 

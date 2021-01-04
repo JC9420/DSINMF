@@ -1,5 +1,10 @@
 function [A_final,B_final] = factorization_AB(X, k1, W, options)
-
+% X:the input data matrix
+% k1:the target dimension of DR
+% W:the affinity matrix of raw data
+% options:
+% written by JianWei Chen , January/2021
+% 
 maxIter = [];
 if isfield(options, 'maxIter')
     maxIter = options.maxIter;
@@ -125,8 +130,8 @@ end %end while
 A_final = Ak1; %%% Z_final  is finally Z
 B_final = Bkl; %%% A_final  is finally A  
 [A_final,B_final] = NormalizeUV(A_final, B_final', NormV, Norm);B_final=B_final';
+figure;
 t=1:iter;
-figure(2);
 plot(t,er,'r-'),xlabel('Iteration times');ylabel('Error');
 
 end

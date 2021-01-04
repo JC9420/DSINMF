@@ -1,4 +1,11 @@
 function [nmi,ami,ari,accuracy,glabel] = run_DSINMF(path_data,path_label,k_array_list)
+    % path_data:the path of data
+    % path_label:the path of label
+    % k_array_list:the list of K,the first element represents the target
+    % demansion of DR and the last K should be set as the number of
+    % clusters
+    % written by JianWei Chen , January/2021
+    % 
     X=load(path_data);
     X = abs(X);
     X = X';%%%%%%%Rows are genes, columns are cell sample 
@@ -56,7 +63,7 @@ function [nmi,ami,ari,accuracy,glabel] = run_DSINMF(path_data,path_label,k_array
     l=l'; %%% Labels obtained by DRjCC
     [newl] = bestMap(ll,l); %% Permute label of l to match ll as good as possible
     glabel=newl;
-    figure(1);
+    figure;
     mappedX = tsne(X');
     gscatter(mappedX(:,1), mappedX(:,2),newl);
     nmi=compute_NMI(ll,newl); %% Calculating the Normalized Mutual Information (NMI)
